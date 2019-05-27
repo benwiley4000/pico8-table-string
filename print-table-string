@@ -1,0 +1,27 @@
+#!/usr/bin/env lua
+
+local stringify = require "stringify"
+
+-- replace this with your own table
+-- from your program, then paste the
+-- output back into your program
+
+local my_table = {
+  hello='world',
+  nested={
+    some='data\'s nested',
+    inside_of='here'
+  },
+  'and',
+  'indexed',
+  'data',
+  { as='well' }
+}
+
+local str = stringify.serialize_table(my_table)
+
+print('my_table=')
+print('table_from_string(')
+print(' '..str)
+print(')')
+
